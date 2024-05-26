@@ -10,76 +10,76 @@ In this streamlit web app, you can upload an image of a business card and extrac
 
 __#1. Tools Installed__
 
-        Virtual Studio code
+-Virtual Studio code
         
-        Python 3.11.3 or higher
+-Python 3.11.3 or higher
         
-        MySQL
+-MySQL
 
-#2. Required Libraries
+__#2. Required Libraries__
 
-streamlit, easyocr, mysql-connector,python, pandas
+-streamlit, easyocr, mysql-connector,python, pandas
 
-#3. Import Libraries
+__#3. Import Libraries__
 
-#Image handling libraries
+__#Image handling libraries__
 
-import easyocr
+-import easyocr
 
-#File handling libraries
+__#File handling libraries__
 
-import os
+-import os
 
-import re
+-import re
 
-#SQL library
+__#SQL library__
 
-import mysql.connector as sq
+-import mysql.connector as sq
 
-#Pandas
+__#Pandas__
 
-import pandas as pd
+-import pandas as pd
 
-#Dashboard libraries
+__#Dashboard libraries__
 
-import streamlit as st
+-import streamlit as st
 
-from streamlit_option_menu import option_menu
+-from streamlit_option_menu import option_menu
 
-#4. ETL and EDA Process
-#a) Extracting the data
+__#4. ETL and EDA Process__
+__# a) Extracting the data__
 
-Extract the particular business card data by using easyocr.
+-Extract the particular business card data by using easyocr.
 
-#b) Transforming the data
+__# b) Transforming the data__
 
-After the extraction process, the text data extracted is converted into a structured data in the form of dataframe
+-After the extraction process, the text data extracted is converted into a structured data in the form of dataframe
 
-#c) Loading data
+__#c) Loading data__
 
-After the transformation process, the data in the form of dataframe is stored in the MySQL database
+-After the transformation process, the data in the form of dataframe is stored in the MySQL database
 
-#d) Visualizing, Updating, deleting the data
+__# d) Visualizing, Updating, deleting the data__
 
-The extracted data can be visualized in the form of dataframe.
+-The extracted data can be visualized in the form of dataframe.
 
-The data can also be updated, modified and deleted from the database.
+-The data can also be updated, modified and deleted from the database.
 
-#User Guide
+__#User Guide__
 
-#Step 1. Home Tab
+__# Step 1. Home__
 
-It provides a brief overview of the project and the tools required for the project.
+-It provides a brief overview of the project and the tools required for the project.
 
-#Step 2. Upload and Extract
+__# Step 2. Upload and Extract__
 
-In this tab, Browse a a business card file (image) using browse file button and upload the image in upload here section. The image will be processed, required data will be collected. The processed image will appear with collected data in the text format.
+-In this tab, Browse a a business card file (image) using browse file button and upload the image in upload here section. 
+-The image will be processed, required data will be collected. 
+-The processed image will appear with collected data in the text format.
+-Upoad the data to MySQL by clicking upload to MySQL button.
+-The fetched data will appear in the form of data frame.
 
-Upoad the data to MySQL by clicking upload to MySQL button.
+__# Step 3. Modify__
 
-The fetched data will appear in the form of data frame.
-
-#Step 3. Modify
-
-In this page, we can alter the data collected from a business card, uplaod the modified data to the SQL database and then we can view the modified data as well.
-Similarly, we can delete the data from MySQL database.
+-In this page, we can alter the data collected from a business card, uplaod the modified data to the SQL database and then we can view the modified data as well.
+-Similarly, we can delete the data from MySQL database.
