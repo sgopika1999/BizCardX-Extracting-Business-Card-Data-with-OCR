@@ -10,11 +10,11 @@ In this streamlit web app, you can upload an image of a business card and extrac
 
 __#1. Tools Installed__
 
--Virtual Studio code
+- **Virtual Studio code
         
--Python 3.11.3 or higher
+- **Python 3.11.3 or higher
         
--MySQL
+- **MySQL
 
 __#2. Required Libraries__
 
